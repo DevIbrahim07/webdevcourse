@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --custom-width: 330px;
+      --custom-height: 200px;
+    }
+    .main {
+      width: var(--custom-width);
+      height: var(--custom-height);
+      border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+
+      box-shadow: inset 10px 10px 5px grey;
+    }
+    h3 {
+      /* box-shadow: 10px 10px 5px green; */
+      text-shadow: 3px 5px 5px blue;
+    }
+    p {
+      /* box-shadow: none; */
+      /* width: var(--custom-width); */
+      text-shadow: 2px 2px 2px red;
+    }
+  </style>
+  <body>
+    <!-- css shadow effect are used to add depth and dimension to elements by creating shadows -->
+    <!-- box shadow / text shadow -->
+    <!-- offset / inset/ none/  -->
+    <div class="main">
+      <h3>shadow effect</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+        eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deserunt, eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Deserunt, eveniet.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      background-color: beige;
+      border: 1px solid black;
+      height: 500px;
+      display: flex;
+      /* flex-direction: row-reverse;
+flex-wrap: wrap; */
+/* justify-content: center; */
+/* justify-content: end; */
+/* justify-content: space-between; */
+flex-direction: row;
+align-items: center;
+align-content: start;
+
+      
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+    }
+    #box1 {
+     
+      background-color: red;
+      order: 500;
+      flex-shrink: 4;
+      flex-basis: 40px;
+    }
+    #box2 {
+      
+      background-color: blue;
+      flex-grow: 3;
+    }
+    #box3 {
+     
+      background-color: green;
+      order: -110;
+    }
+    #box4 {
+      
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <!-- flexbox>? is a one dimensional layout model that allows items to be aligned and distributed within
+      a container. by default flex ki direction row hoti he 
+      -->
+    <!-- display: flex; 
+       justisfy property
+       allign property
+        flex-direction: row | row-reverse | column | column-reverse;
+         flex-wrap: nowrap | wrap | wrap-reverse is used to control whether the flex container is single-line
+          or multi-line;
+        flex-flow: <flex-direction> <flex-wrap>;
+        justify-content: flex-start | flex-end | center | space-between | space-around | space
+-evenly is used maix axis k accordingly items ko align krta he agr flex-direction row he to horizontal axis pr
+ align krega and agr column he to vertical axis pr align krega;
+ agr flex direction row he to main axis horizontal hoga or agr column he to vertical hoga;
+        align-items: stretch | flex-start | flex-end | center | baseline is used y axis k accordingly items ko align krta he agr flex-direction row he to vertical axis pr
+ align krega and agr column he to horizontal axis pr align krega;
+        align-content: stretch | flex-start | flex-end | center | space-between | space-around; space-evenly;
+        order: <number>;
+        -->
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>

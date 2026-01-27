@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* .parent {
+      background-color: aquamarine;
+      border: 2px solid black;
+      width: 50%;
+    }
+    .child {
+      background-color: red;
+      border: 2px solid blue;
+      width: 20%;
+    } */
+    .container {
+      width: 10vw;
+      height: 10vh;
+      background-color: beige;
+      border: 3px solid yellow;
+    }
+    .pixels {
+      font-size: 50px;
+      border: 1px solid black;
+    }
+    .wraper {
+      font-size: 1em;
+    }
+    .px {
+      width: 200px;
+    }
+    .vw {
+      width: 10vw;
+    }
+    .em {
+      width: 10em;
+    }
+    .para {
+      border: 1px solid black;
+      font-size: 5rem;
+    }
+  </style>
+  <body>
+    <!-- %, pixel, vw,vh, -->
+    <!-- relative units> 
+      em? dependent on fontsize of parent . default font size =16px-->
+    <!-- rem? is dependent on root element  -->
+    <!-- <div class="parent"><div class="child">child element</div></div> -->
+    <div class="container">welcome here</div>
+    <div class="pixels">pixel example</div>
+    <div class="wraper">
+      <div class="box px">i am 20px wide</div>
+      <div class="box vw">i am 10vw wide</div>
+      <div class="box em">i am 10em wide</div>
+    </div>
+    <p class="para">helo</p>
+  </body>
+</html>

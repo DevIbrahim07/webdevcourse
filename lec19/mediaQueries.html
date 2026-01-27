@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      background-color: lightblue;
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+    }
+    .container {
+      display: flex;
+
+      width: 900px;
+      height: 400px;
+      border: 2px solid red;
+    }
+    .bo {
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      margin: 10px;
+    }
+    @media (min-width: 650px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 650px) {
+      .container {
+        flex-direction: row;
+      }
+    }
+    @media (max-width: 200px) {
+      .box {
+        background-color: brown;
+      }
+    }
+    @media (max-width: 600px) and (min-width: 400px) {
+      .box {
+        background-color: yellow;
+      }
+    }
+  </style>
+  <body>
+    <!-- media queries are use to apply different styles for different screen sizes
+     max width/ min width  -->
+    <div class="box">heloo world</div>
+    <div class="container">
+      <div class="bo"></div>
+      <div class="bo"></div>
+      <div class="bo"></div>
+      <div class="bo"></div>
+    </div>
+  </body>
+</html>
