@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Event Registration Form</title>
+  </head>
+  <body>
+    <h2>Event Registration Form</h2>
+
+    <form action="#" method="post">
+      <!-- Name -->
+      <label>Full Name:</label><br />
+      <input type="text" name="name" placeholder="Enter your name" required />
+      <br /><br />
+
+      <!-- Email -->
+      <label>Email:</label><br />
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br /><br />
+
+      <!-- Phone -->
+      <label>Phone:</label><br />
+      <input type="tel" name="phone" placeholder="Enter phone number" />
+      <br /><br />
+
+      <!-- Age -->
+      <label>Age:</label><br />
+      <input type="number" name="age" />
+      <br /><br />
+
+      <!-- Gender -->
+      <label>Gender:</label><br />
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
+      <input type="radio" name="gender" /> Other <br /><br />
+
+      <!-- Event Type -->
+      <label>Select Event:</label><br />
+      <select name="event">
+        <option>Select Event</option>
+        <option>Tech Conference</option>
+        <option>Workshop</option>
+        <option>Seminar</option>
+        <option>Meetup</option>
+      </select>
+      <br /><br />
+
+      <!-- Date -->
+      <label>Event Date:</label><br />
+      <input type="date" name="date" />
+      <br /><br />
+
+      <!-- Ticket Type -->
+      <label>Ticket Type:</label><br />
+      <input type="checkbox" /> Regular <input type="checkbox" /> VIP
+      <input type="checkbox" /> Student <br /><br />
+
+      <!-- Message -->
+      <label>Message:</label><br />
+      <textarea rows="4" cols="30" placeholder="Any special request"></textarea>
+      <br /><br />
+
+      <!-- Submit -->
+      <input type="submit" value="Register" />
+      <input type="reset" value="Clear" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      border: 1px solid black;
+      margin: 10px;
+      position: relative;
+    }
+    img {
+      margin: 10px;
+    }
+    .img2 {
+      position: relative;
+      top: 100px;
+      left: 100px;
+    }
+    .imag3 {
+      position: sticky;
+    }
+    .img4 {
+      position: absolute;
+      top: 50px;
+    }
+    .img4 {
+      position: fixed;
+    }
+  </style>
+  <body>
+    <!-- css positioning>??
+     on which positon which elements are placed op/bottom/left/right
+    bydefault: static property use ho gi elements pr . 
+
+    static: cannot apply t/b/l/right property to any element
+    Relative: current window k relatively element ko position krna he
+    can apply t/b/l/r proprty to element to define space. gap maintain rahe ga 
+
+    sticky: stcik reh gi but kis postion pr . here position batana pare ga element kis postion pr stick rehe ga. and also jb tk apne parent container k andr rehe gi wo sticky rehe gi othervise wo nai rahe gi sticky
+    absolute: when we need to overlap element . apply according to
+     closest ancestor element. and old gap bhi maintain nai hoga
+    fixed: fixed rehe gi postion 
+    -->
+    <div class="container">
+      <img class="img1" src="1.jpg" alt="" width="300px" height="300px" />
+      <img class="img2" src="2.jpg" alt="" width="300px" height="300px" />
+      <img class="img3" src="3.png" alt="" width="300px" height="300px" />
+      <img class="img4" src="2.jpg" alt="" width="300px" height="300px" />
+    </div>
+  </body>
+</html>

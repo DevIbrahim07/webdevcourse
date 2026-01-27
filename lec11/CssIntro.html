@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    /* this is internal css  */
+    h1 {
+      background-color: aqua;
+    }
+    p {
+      font-size: 30px;
+    }
+    #ar1 {
+      background-color: blue;
+    }
+    .aside1 {
+      background-color: brown;
+    }
+    p,
+    article {
+      width: 700px;
+    }
+    p.para {
+      text-align: center;
+    }
+  </style>
+
+  <!-- inline/ internal /  external  -->
+  <!-- same property apply ho gi kisi bhi element pr to preference inline css ko di jae gi  -->
+  <!-- selector? asa tariqa he jis k through kisi bhi html ko target krskte hai.
+     1-element selector> using tags name
+     2-id selector> using # it is unique
+     3-class selector> using . it can be multipe for multiple tags
+     4-group selector> using multiple tags
+    -->
+  <body>
+    <h1 style="background-color: red">heading</h1>
+    <h2 style="background-color: red">this is heading</h2>
+    <p class="para" style="background-color: green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+      accusantium. Vel distinctio nesciunt velit maxime dignissimos adipisci
+      repellat consequatur cum sapiente nemo hic ex alias fugiat quisquam quae,
+      a aperiam.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eum esse
+      explicabo vitae sapiente assumenda consequuntur sunt quaerat vero quos?
+    </p>
+    <article id="ar1">helo</article>
+    <aside class="aside1">heloasdfgbngfdsfg</aside>
+  </body>
+</html>

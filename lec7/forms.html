@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Complete Form</title>
+  </head>
+  <body>
+    <!-- form tags are used for to take data from user -->
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend><h2>Registration Form</h2></legend>
+        <!-- Label + Input -->
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          required
+        /><br /><br />
+
+        <!-- Email -->
+        <label>Email:</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter email"
+        /><br /><br />
+
+        <!-- Password -->
+        <label>Password:</label><br />
+        <input type="password" name="password" /><br /><br />
+
+        <!-- Number -->
+        <label>Age:</label><br />
+        <input type="number" name="age" /><br /><br />
+
+        <!-- Date -->
+        <label>DOB:</label><br />
+        <input type="date" name="dob" /><br /><br />
+
+        <!-- Radio -->
+        <label>Gender:</label><br />
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="other" /> Other <br /><br />
+
+        <!-- Checkbox -->
+        <label>Skills:</label><br />
+        <input type="checkbox" name="skills" /> HTML
+        <input type="checkbox" name="skills" /> CSS
+        <input type="checkbox" name="skills" /> JS <br /><br />
+
+        <!-- Select -->
+        <label>Country:</label><br />
+        <select name="country">
+          <option>Select Country</option>
+          <option>Pakistan</option>
+          <option>India</option>
+          <option>USA</option>
+        </select>
+        <br /><br />
+
+        <!-- Textarea -->
+        <label>Message:</label><br />
+        <textarea name="message" rows="4" cols="30"></textarea><br /><br />
+
+        <!-- File -->
+        <label>Upload File:</label><br />
+        <input type="file" /><br /><br />
+
+        <!-- Range -->
+        <label>Experience:</label><br />
+        <input type="range" /><br /><br />
+
+        <!-- Color -->
+        <label>Favorite Color:</label><br />
+        <input type="color" /><br /><br />
+
+        <!-- Hidden -->
+        <input type="hidden" value="12345" />
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <button type="button">Normal Button</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
