@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      width: 100vw;
+      height: 100vh;
+      background-color: beige;
+      border: 1px solid black;
+    }
+    .box {
+      width: 300px;
+      height: 100px;
+      background-color: coral;
+      border: 2px solid black;
+      margin-top: 30px;
+      margin-left: 30px;
+      animation-name: moveright;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      animation: linear;
+    }
+    @keyframes moveright {
+      from {
+        left: 0px;
+        top: 0px;
+      }
+      to {
+        left: 1200px;
+        top: 0px;
+      }
+    }
+    /* 0% {
+        transform: translateX(0px);
+        background-color: coral;
+      }
+      50% {
+        transform: translateX(300px);
+        background-color: lightblue;
+      }
+      100% {
+        transform: translateX(0px);
+        background-color: coral;
+      }
+    }
+    .box {
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    */
+    /* ease in / ease out/ linear/ infinite / alternative / running  */
+  </style>
+  <body>
+    <div class="main"><div class="box"></div></div>
+  </body>
+</html>
