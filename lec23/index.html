@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="/src/style.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid gap-4 m-4 sm:grid-cols-2 grid-cols-2">
+      <div class="min-h-[100px] rounded bg-amber-600 shadow-xl">1</div>
+      <div class="min-h-[100px] rounded bg-teal-600 shadow-xl">2</div>
+    </div>
+    <div class="m-4 grid grid-cols-3 gap-4 sm:grid-cols-2">
+      <div class="min-h-[100px] rounded bg-amber-600 shadow-xl">1</div>
+      <div class="min-h-[100px] rounded bg-teal-600 shadow-xl">2</div>
+      <div class="min-h-[100px] rounded bg-red-600 shadow-xl">3</div>
+    </div>
+    <!-- unequal proportions / non equal layouts  -->
+    <div class="m-4 grid sm:grid-cols-12 gap-4">
+      <div class="min-h-[100px] rounded bg-amber-600 shadow-xl sm:col-span-4">
+        1
+      </div>
+      <div class="min-h-[100px] rounded bg-teal-600 shadow-xl sm:col-span-8">
+        2
+      </div>
+    </div>
+
+    <div class="m-4 grid sm:grid-cols-12 gap-4">
+      <div
+        class="min-h-[100px] rounded bg-amber-600 shadow-xl sm:col-span-2 hidden sm:block"
+      >
+        1
+      </div>
+      <div class="min-h-[100px] rounded bg-teal-600 shadow-xl sm:col-span-8">
+        2
+      </div>
+      <div class="min-h-[100px] rounded bg-red-600 shadow-xl sm:col-span-2">
+        3
+      </div>
+    </div>
+  </body>
+</html>
