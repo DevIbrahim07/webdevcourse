@@ -6,6 +6,7 @@ function outer() {
   let name = "ali";
   function inner() {
     console.log("i am inner", name);
+    
   }
   return inner;
 }
