@@ -25,13 +25,6 @@ for (let value of user) {
 ⚠️ Objects directly iterable nahi hote,
 for...of sirf arrays, strings, maps, sets ke liye kaam karta hai.let user = { name: "Ali", age: 25, city: "Lahore" };
 
-// ❌ ye kaam nahi karega
-for (let value of user) {
-  console.log(value);
-}
-⚠️ Objects directly iterable nahi hote,
-for...of sirf arrays, strings, maps, sets ke liye kaam karta hai.
-Object ke liye for...in use karna hota hai.
  */
 
 //example 2
